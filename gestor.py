@@ -60,7 +60,7 @@ class GestorReservas:
         self.reservas = []
         self.logger = logger
 
-        def crear(self, cliente, servicio, duracion):
+    def crear(self, cliente, servicio, duracion):
         """Crea una reserva usando try/except/else/finally para dejar rastro."""
         try:
             # Validamos lo básico antes de instanciar la reserva
