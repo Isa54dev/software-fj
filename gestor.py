@@ -99,23 +99,6 @@ class GestorReservas:
             )
 
     def confirmar(self, reserva):
-            # Registramos el error y lo relanzamos para que main lo sepa
-            self.logger.registrar_error(e, "crear reserva")
-            raise
-        else:
-            # Este bloque solo corre si NO hubo excepción
-            self.reservas.append(reserva)
-            self.logger.registrar_evento(
-                f"Reserva creada para {cliente.nombre} - servicio {servicio.codigo}"
-            )
-            return reserva
-        finally:
-            # Pase lo que pase, dejamos anotado que hubo un intento de reserva
-            self.logger.registrar_evento(
-                f"Intento de creación de reserva finalizado para servicio {servicio.codigo}"
-            )
-
-    def confirmar(self, reserva):
         try:
             reserva.confirmar()
             self.logger.registrar_evento(f"Reserva confirmada: {reserva.describir()}")
