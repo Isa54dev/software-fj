@@ -6,6 +6,7 @@ Proyecto de la Fase 4 del curso Programación (213023) – UNAD.
 - (JAIDER JAFET MENGUAL CUELLO) – excepciones.py, logger.py, gestor.py, modelo.py, main.py.
 - (JULIETH PAOLA CARDENAS CERPA) – excepciones.py
 - Ambos: README.md e informe PDF
+- Retroalimentación realizada respectivamente por Jaider Mengual y Paola Julieth para la entrega final
 
 ## Cómo ejecutar (Colocamos este recordatorio para no olvidar como ejecutarlo rápidamente)
 ```bash
